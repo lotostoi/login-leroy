@@ -1,0 +1,13 @@
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__body {
+        width: 100%;
+        max-width: 1366px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 93px;
+    }
+}

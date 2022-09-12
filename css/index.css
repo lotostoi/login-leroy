@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.02), 0px 1px 4px rgba(0, 0, 0, 0.16);
+  box-sizing: border-box;
+}
+.header__content {
+  width: 100%;
+  max-width: 1366px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 93px;
+}
+.header__content a {
+  cursor: pointer;
+}
+.header__auth {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header__auth .login {
+  cursor: pointer;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-right: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 4px;
+  text-align: center;
+  letter-spacing: 0.12px;
+}
+.header__auth .login svg {
+  margin-right: 10px;
+}
+.header__auth .login.active {
+  background: rgb(70, 76, 92);
+  color: #FFFFFF;
+}
+.header__auth .login.active svg > g {
+  fill: #fff !important;
+}
+.header__auth .registration {
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 4px;
+  text-align: center;
+  letter-spacing: 0.12px;
+}
+.header__auth .registration.active {
+  background: rgb(70, 76, 92);
+  color: #FFFFFF;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.content__body {
+  width: 100%;
+  max-width: 1366px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 93px;
+}/*# sourceMappingURL=index.css.map */
