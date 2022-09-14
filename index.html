@@ -69,7 +69,7 @@
           </svg>
         </a>
         <div class="header__auth">
-          <button class="login">
+          <a class="login">
             <div>
               <svg
                 fill="none"
@@ -89,16 +89,56 @@
               </svg>
             </div>
             <span>Войти</span>
-          </button>
-          <button class="registration active">Зарегистрироваться</button>
+          </a>
+          <a class="registration active">Зарегистрироваться</a>
         </div>
       </div>
     </header>
     <!-- Content-->
     <main class="content">
       <div class="content__wrapper">
-        <div class="iamge"></div>
-        <form action="" class="form"></form>
+        <div class="iamge">
+          <img src="./images/image-left.svg" alt="" />
+        </div>
+        <form action="" class="form">
+          <h1 class="form__title">Регистрация в программе</h1>
+          <p class="form__additional_info">
+            Зарегистрируйтесь по номеру вашей Профессиональной карты. Если у вас
+            нет карты, мы создадим вам её при регистрации. Не забудьте
+            подтвердить номер телефона.
+          </p>
+          <div class="form__is_cart">
+            <div class="is">
+              <input type="radio" id="is-cart" name="is_cart" />
+              <div class="fake-radio-batton"></div>
+              <label for="is-cart">У меня есть карта</label>
+            </div>
+            <div class="is">
+              <input type="radio" id="not-cart" name="is_cart" />
+              <div class="fake-radio-batton"></div>
+              <label for="not-cart">У меня есть карта</label>
+            </div>
+
+            <input type="text" placeholder="Номер карты без пробелов" />
+            <input type="text" placeholder="Имя" />
+            <input type="text" placeholder="Фамилия" />
+            <input type="text" placeholder="Телефон" />
+            <input type="text" placeholder="Электронная почта" />
+
+            <div class="wont_to_get">
+              <input type="checkbox" name="wont_to_get" id="wont-to-get" />
+              <label for="wont-to-get"
+                >Я хочу получать информационные и рекламные сообщения о товарах
+                и услугах Леруа Мерлен</label
+              >
+            </div>
+            <button>Отправить</button>
+            <p class="btn_hint">
+              Нажимая кнопку, я соглашаюсь с правилами партнёрской программы и
+              офертой и даю согласие на обработку персональных данных
+            </p>
+          </div>
+        </form>
       </div>
     </main>
   </body>

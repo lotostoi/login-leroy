@@ -82,10 +82,18 @@
   display: flex;
   justify-content: center;
 }
-.content__body {
+.content__wrapper {
   width: 100%;
   max-width: 1366px;
   display: flex;
   justify-content: space-between;
   padding: 20px 93px;
+}
+@media screen and (min-width: 1027px) {
+  .content__wrapper > .form {
+    margin-top: 48px;
+    padding: 48px;
+    width: 100%;
+    max-width: 700px;
+  }
 }/*# sourceMappingURL=index.css.map */

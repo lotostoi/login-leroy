@@ -3,11 +3,27 @@
     display: flex;
     justify-content: center;
 
-    &__body {
+    &__wrapper {
         width: 100%;
         max-width: 1366px;
         display: flex;
         justify-content: space-between;
         padding: 20px 93px;
+
+        &>.image {}
+
+        &>.form {
+            @include customBP(1027px) {
+                margin-top: 48px;
+                padding: 48px;
+                width: 100%;
+                max-width: 700px;
+            }
+
+        }
+
     }
+
+
+
 }
