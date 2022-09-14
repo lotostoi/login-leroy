@@ -1,8 +1,12 @@
+@import "fonts";
+@import "mixins";
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-@import "mixins";
+
 @import "header";
 @import "content";
