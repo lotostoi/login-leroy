@@ -29,16 +29,19 @@
 
         &>.image {
             display: none;
-            align-items: center;
+            align-items: flex-start;
             height: inherit;
 
             @include customBP(1027px) {
                 display: flex;
 
                 img {
+                    margin-top: 177px;
                     width: 415px;
                     height: 381px;
                 }
+
+
             }
 
             @include customBP(1366px) {
@@ -50,9 +53,6 @@
                 }
             }
 
-            img {
-                margin-top: -40px;
-            }
         }
 
         &>.form {
@@ -179,6 +179,7 @@
                     border: 1px solid #D2D4D8;
                     border-radius: 4px;
                     margin-right: 8px;
+                    accent-color: #464C5C;
                 }
 
                 label {

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="public/css/index.css" />
 </head>
 
 <body>
@@ -68,7 +68,7 @@
   <main class="content">
     <div class="content__wrapper">
       <div class="image">
-        <img src="./images/image-left.svg" alt="" />
+        <img src="public/images/image-left.svg" alt="" />
       </div>
       <form action="" class="form">
         <h1 class="form__title">Регистрация в программе</h1>
@@ -79,18 +79,18 @@
         </p>
         <div class="form__is_cart">
           <div class="is">
-            <input type="radio" id="is-cart" name="is_cart" />
+            <input type="radio" id="is-cart" name="is_cart"  value="1" checked/>
             <div class="fake-radio-button"></div>
             <label for="is-cart">У меня есть карта</label>
           </div>
           <div class="not">
-            <input type="radio" id="not-cart" name="is_cart" />
-            <div class="fake-radio-button active"></div>
+            <input type="radio" id="not-cart" name="is_cart"  value="0"/>
+            <div class="fake-radio-button"></div>
             <label for="not-cart">У меня нет карты</label>
           </div>
         </div>
 
-        <div class="field">
+        <div class="field" id="cart-number">
           <input type="text" placeholder="Номер карты без пробелов" />
           <small class="message">Текст ошибки валидации</small>
         </div>
@@ -129,6 +129,7 @@
       </form>
     </div>
   </main>
+  <script src="public/js/index.js"></script>
 </body>
 
 </html>

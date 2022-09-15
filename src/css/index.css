@@ -180,7 +180,7 @@
 }
 .content__wrapper > .image {
   display: none;
-  align-items: center;
+  align-items: flex-start;
   height: inherit;
 }
 @media screen and (min-width: 1027px) {
@@ -188,6 +188,7 @@
     display: flex;
   }
   .content__wrapper > .image img {
+    margin-top: 177px;
     width: 415px;
     height: 381px;
   }
@@ -200,9 +201,6 @@
     width: 480px;
     height: 441px;
   }
-}
-.content__wrapper > .image img {
-  margin-top: -40px;
 }
 .content__wrapper > .form .form__title {
   margin-bottom: 16px;
@@ -314,6 +312,7 @@
   border: 1px solid #D2D4D8;
   border-radius: 4px;
   margin-right: 8px;
+  accent-color: #464C5C;
 }
 .content__wrapper > .form .wont_to_get label {
   margin-top: -2px;
