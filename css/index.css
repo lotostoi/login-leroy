@@ -402,6 +402,9 @@
   .content__wrapper > .form {
     padding: 20px 44px;
   }
+  .content__wrapper > .form .btn-submit:hover {
+    background-color: #1a1c22;
+  }
 }
 @media screen and (min-width: 1366px) {
   .content__wrapper > .form {

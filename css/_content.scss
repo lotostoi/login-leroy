@@ -280,6 +280,10 @@
 
             @include customBP(1027px) {
                 padding: 20px 44px;
+
+                .btn-submit:hover {
+                    background-color: darken(#464C5C, 20%);
+                }
             }
 
             @include customBP(1366px) {
