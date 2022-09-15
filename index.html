@@ -89,17 +89,38 @@
             <label for="not-cart">У меня нет карты</label>
           </div>
         </div>
-        <input type="text" class="field" placeholder="Номер карты без пробелов" />
-        <input type="text" class="field" placeholder="Имя" />
-        <input type="text" class="field" placeholder="Фамилия" />
-        <input type="text" class="field" placeholder="Телефон" />
-        <input type="text" class="field" placeholder="Электронная почта" />
+
+        <div class="field">
+          <input type="text" placeholder="Номер карты без пробелов" />
+          <small class="message">Текст ошибки валидации</small>
+        </div>
+
+        <div class="field">
+          <input type="text" placeholder="Имя" class="error"/>
+          <small class="message error">Текст ошибки валидации</small>
+        </div>
+
+        <div class="field">
+          <input type="text" placeholder="Фамилия" />
+          <small class="message">Текст ошибки валидации</small>
+        </div>
+        
+        <div class="field">
+          <input type="text"  placeholder="Телефон" />
+          <small class="message">Текст ошибки валидации</small>
+        </div>
+
+        <div class="field">
+          <input type="text" placeholder="Электронная почта" />
+          <small class="message">Текст ошибки валидации</small>
+        </div>
 
         <div class="wont_to_get">
           <input type="checkbox" name="wont_to_get" id="wont-to-get" />
           <label for="wont-to-get">Я хочу получать информационные и рекламные сообщения о товарах
             и услугах Леруа Мерлен</label>
         </div>
+
         <button class="btn-submit" type="submit">Отправить</button>
         <p class="btn-hint">
           Нажимая кнопку, я соглашаюсь с правилами партнёрской программы и

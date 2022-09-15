@@ -40,6 +40,7 @@
                     height: 381px;
                 }
             }
+
             @include customBP(1366px) {
                 display: flex;
 
@@ -126,23 +127,41 @@
             }
 
             .field {
-                display: flex;
-                box-sizing: border-box;
-                width: 100%;
-                max-width: 570px;
                 margin-bottom: 28px;
-                background: #FFFFFF;
-                border: 1px solid #CED0D6;
-                border-radius: 4px;
-                font-style: normal;
-                font-weight: 400;
-                letter-spacing: 0.05px;
-                color: #999999;
-                outline: none;
-                height: 40px;
-                padding: 10px 12px;
-                font-size: 14px;
-                line-height: 20px;
+
+                input {
+                    display: flex;
+                    box-sizing: border-box;
+                    width: 100%;
+                    max-width: 570px;
+                    background: #FFFFFF;
+                    border: 1px solid #CED0D6;
+                    border-radius: 4px;
+                    font-style: normal;
+                    font-weight: 400;
+                    letter-spacing: 0.05px;
+                    color: #999999;
+                    outline: none;
+                    height: 40px;
+                    padding: 10px 12px;
+                    font-size: 14px;
+                    line-height: 20px;
+
+                    &.error {
+                        border-color: red;
+                    }
+                }
+
+                .message {
+
+                    padding: 7px 2px 0 2px;
+                    color: red;
+                    display: none;
+
+                    &.error {
+                        display: flex;
+                    }
+                }
             }
 
 
@@ -248,11 +267,14 @@
                 }
 
                 .field {
-                    padding: 12px 16px;
-                    height: 48px;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 24px;
+
+                    input {
+                        padding: 12px 16px;
+                        height: 48px;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
                 }
             }
 
